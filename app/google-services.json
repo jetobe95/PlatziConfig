@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "230203128884",
+    "project_id": "platziconfapp-9b6ad",
+    "storage_bucket": "platziconfapp-9b6ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230203128884:android:2ab3f2adaee9487297de61",
+        "android_client_info": {
+          "package_name": "com.platzi.config"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230203128884-vcfpbknqgutcl12e18fi52ddtbg86tu7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.platzi.config",
+            "certificate_hash": "2d2d527d894d9c1db046f4311ca2ea28e632a04b"
+          }
+        },
+        {
+          "client_id": "230203128884-a860hm8ogpeam8tbnnef887vqki267jq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-8mL97X7kitFjlWDsqrADfy8SvPgp72w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230203128884-a860hm8ogpeam8tbnnef887vqki267jq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
