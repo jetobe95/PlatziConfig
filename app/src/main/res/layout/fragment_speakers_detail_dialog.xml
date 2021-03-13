@@ -11,7 +11,7 @@
         android:layout_height="wrap_content">
 
         <Toolbar
-                android:id="@+id/toolbar"
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"></Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
@@ -24,86 +24,88 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-<androidx.cardview.widget.CardView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
 
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_height="wrap_content">
 
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center_horizontal"
 
-                    android:contentDescription="TODO"
-                    android:scaleType="centerCrop"
-                    android:src="@mipmap/ic_launcher" />
-
-                <TextView
-                    android:id="@+id/txItemDetailSpeaker"
+                <LinearLayout
+                    android:background="@drawable/shape_parrafo"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                    android:gravity="center_horizontal"
-                    android:text="Nombre Apellido"
-                    android:textColor="@color/colorPrimary"
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
 
-                    android:textSize="20sp"
-                    android:textStyle="bold"
+                        android:contentDescription="TODO"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/ic_launcher" />
 
-                    />
+                    <TextView
+                        android:id="@+id/tvItemDetailSpeaker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
 
-                <TextView
-                    android:id="@+id/txItemDetailConferenceTag"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:gravity="center_horizontal"
-                    android:text="Titulo trabajo"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="12sp"
+                        android:gravity="center_horizontal"
+                        android:text="Nombre Apellido"
+                        android:textColor="@color/colorPrimary"
 
-                    />
+                        android:textSize="20sp"
+                        android:textStyle="bold"
 
-                <TextView
-                    android:id="@+id/txItemDetailConferenceDescrition"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:gravity="center_horizontal"
-                    android:text="Trabajo"
-                    android:textColor="@color/colorPrimary"
+                        />
 
-                    android:textSize="15sp"
+                    <TextView
+                        android:id="@+id/tvItemDetailConferenceTag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:text="Titulo trabajo"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"
 
-                    />
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_icons_twitter"
-                    android:layout_gravity="center_horizontal"
-                    />
+                        />
 
-                <TextView
-                    android:id="@+id/txItem"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:text="Lorem lorem Lorem"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="15sp"
+                    <TextView
+                        android:id="@+id/tvItemDetailConferenceDescrition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:text="Trabajo"
+                        android:textColor="@color/colorPrimary"
 
-                    />
+                        android:textSize="15sp"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/ivTwitterLogo"
+                        android:layout_height="@dimen/ivTwitterLogo"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_icons_twitter" />
+
+                    <TextView
+                        android:id="@+id/tvSpeakerBio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Lorem lorem Lorem"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+
+                        />
 
 
-            </LinearLayout>
+                </LinearLayout>
 
-</androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
         </ScrollView>
 
 

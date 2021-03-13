@@ -9,4 +9,6 @@
     <dimen name="tamanoSubtitulo">15sp</dimen>
     <dimen name="itemScheduleTitulo">30sp</dimen>
     <dimen name="itemScheduleSubtitulo">20sp</dimen>
+    <dimen name="ivTwitterLogo">40dp</dimen>
+    <dimen name="ubicationIconTextPadding">20dp</dimen>
 </resources>

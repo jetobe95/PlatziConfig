@@ -1,128 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbarConference"
+            android:id="@+id/toolbarConference"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
     </com.google.android.material.appbar.AppBarLayout>
-    
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <LinearLayout
-                android:orientation="vertical"
+                android:background="@drawable/shape_parrafo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="200dp">
+
                     <ImageView
-                        android:scaleType="centerCrop"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/platzi_conf_2"
-                        android:contentDescription="TODO" />
+                        android:contentDescription="TODO"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/platzi_conf_2" />
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorPrimary"
                         android:alpha="0.5"
-                        />
+                        android:background="@color/colorPrimary" />
+
                     <TextView
                         android:id="@+id/txItemScheduleHour"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Titulo de la conferenceia"
-                        android:gravity="center_horizontal"
-                        android:textSize="30sp"
-                        android:textColor="#fff"
-                        android:textStyle="bold"
                         android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:text="Titulo de la conferenceia"
+                        android:textColor="#fff"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
 
                         />
                 </RelativeLayout>
+
                 <androidx.cardview.widget.CardView
-                    app:cardCornerRadius="4dp"
-                    app:cardElevation="1dp"
-                    android:layout_margin="15dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                        <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txItemDetailConferenceHour"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                                android:orientation="vertical">
-                            <TextView
-                                android:id="@+id/txItemDetailConferenceHour"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="00:00"
-                                android:gravity="center_horizontal"
-                                android:textSize="15sp"
-                                android:textColor="@color/colorPrimary"
-                                android:layout_margin="5dp"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="00:00"
+                            android:textColor="@color/colorPrimary"
 
-                                android:layout_centerInParent="true"
+                            android:textSize="15sp"
 
-                                />
-                            <TextView
-                                android:id="@+id/txItemDetailSpeaker"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Nombre expositor"
+                            />
 
-                                    android:gravity="center_horizontal"
-                                android:textSize="20sp"
-                                android:textColor="@color/colorPrimary"
-                                android:layout_margin="5dp"
+                        <TextView
+                            android:id="@+id/txItemDetailSpeaker"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
 
-                                android:textStyle="bold"
-                                android:layout_centerInParent="true"
+                            android:layout_margin="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="Nombre expositor"
+                            android:textColor="@color/colorPrimary"
 
-                                />
-                            <TextView
-                                android:id="@+id/txItemDetailConferenceTag"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Tag"
-                                android:gravity="center_horizontal"
-                                android:textSize="12sp"
-                                android:textColor="@color/colorPrimary"
-                                android:layout_margin="5dp"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
 
-                                android:textStyle="bold"
-                                android:layout_centerInParent="true"
+                            />
 
-                                />
+                        <TextView
+                            android:id="@+id/txItemDetailConferenceTag"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="Tag"
+                            android:textColor="@color/colorPrimary"
 
-                            <TextView
-                                android:id="@+id/txItemDetailConferenceDescrition"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Detalle de conferencia"
-                                android:gravity="center_horizontal"
-                                android:textSize="15sp"
-                                android:textColor="@color/colorPrimary"
-                                android:layout_margin="5dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
 
-                                android:textStyle="bold"
-                                android:layout_centerInParent="true"
+                            />
 
-                                />
+                        <TextView
+                            android:id="@+id/txItemDetailConferenceDescrition"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="Detalle de conferencia"
+                            android:textColor="@color/colorPrimary"
 
-                        </LinearLayout>
+                            android:textSize="15sp"
+                            android:textStyle="bold"
 
+                            />
+
+                    </LinearLayout>
 
 
                 </androidx.cardview.widget.CardView>
